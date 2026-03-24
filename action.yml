@@ -1,0 +1,17 @@
+name: PR Complexity Grade
+description: Scores every pull request by complexity and prefixes the title with a Doomguy emoji.
+author: Jamie
+
+branding:
+  icon: activity
+  color: red
+
+inputs:
+  token:
+    description: GitHub token
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: node20
+  main: index.js

@@ -1,0 +1,16 @@
+name: PR Complexity Grade
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+  push:
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  grade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: your-handle/pr-complexity-grade@v1

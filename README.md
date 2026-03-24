@@ -10,7 +10,7 @@ A GitHub Action that scores pull requests by complexity and prefixes the title w
 | 🙂 | Hey, Not Too Rough |
 | 😐 | Hurt Me Plenty |
 | 😠 | Ultra-Violence |
-| 😡 | Nightmare! |
+| 😡 | Nightmare |
 | 💀 | Apocalyptic |
 
 The score is calculated from the number of changed lines, files touched, and distinct file extensions.

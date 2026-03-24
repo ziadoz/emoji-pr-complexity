@@ -9,7 +9,7 @@ branding:
 inputs:
   token:
     description: GitHub token
-    required: false
+    required: true
     default: ${{ github.token }}
 
 runs:

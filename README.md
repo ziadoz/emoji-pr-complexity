@@ -4,7 +4,7 @@ A GitHub Action that scores pull requests by complexity and prefixes the title w
 
 ## Grading Scale
 
-| Emoji | Meaning |
+| Emoji | Complexity |
 |-------|---------|
 | 😊 | Trivial |
 | 🙂 | Small |

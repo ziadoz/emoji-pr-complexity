@@ -6,11 +6,11 @@ A GitHub Action that scores pull requests by complexity and prefixes the title w
 
 | Emoji | Complexity |
 |-------|---------|
-| 😊 | Trivial |
-| 🙂 | Small |
-| 😐 | Medium |
-| 😠 | Large |
-| 😡 | Huge |
+| 😊 | I'm Too Young to Die |
+| 🙂 | Hey, Not Too Rough |
+| 😐 | Hurt Me Plenty |
+| 😠 | Ultra-Violence |
+| 😡 | Nightmare! |
 | 💀 | Apocalyptic |
 
 The score is calculated from the number of changed lines, files touched, and distinct file extensions.

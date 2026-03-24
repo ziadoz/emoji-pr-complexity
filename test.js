@@ -1,14 +1,6 @@
 'use strict';
 
-// Stub out @actions/* so index.js can be required without a real GH context
-const Module = require('module');
-const _resolve = Module._resolveFilename.bind(Module);
-Module._resolveFilename = (req, ...args) =>
-  req === '@actions/core' || req === '@actions/github' ? req : _resolve(req, ...args);
-require.cache['@actions/core']   = { id: '@actions/core',   exports: {}, loaded: true, children: [], filename: '@actions/core',   paths: [] };
-require.cache['@actions/github'] = { id: '@actions/github', exports: {}, loaded: true, children: [], filename: '@actions/github', paths: [] };
-
-const { score, emoji, stripEmoji } = require('./index');
+const { score, emoji, stripEmoji } = require('./grading');
 
 let passed = 0, failed = 0;
 

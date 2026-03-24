@@ -2,15 +2,23 @@
   "name": "pr-complexity-grade",
   "version": "1.0.0",
   "description": "Scores every pull request by complexity and prefixes the title with a Doomguy emoji.",
+  "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
-    "build": "ncc build index.js -o dist"
+    "build": "ncc build index.js -o dist",
+    "test": "node --test test.js",
+    "lint": "biome check .",
+    "format": "biome check --write ."
   },
   "dependencies": {
     "@actions/core": "^1.10.1",
     "@actions/github": "^6.0.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@vercel/ncc": "^0.38.1"
   },
   "license": "MIT"

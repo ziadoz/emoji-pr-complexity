@@ -5,11 +5,20 @@
   },
   "formatter": {
     "indentStyle": "space",
-    "indentWidth": 2
+    "indentWidth": 2,
+    "lineWidth": 100
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single"
+      "quoteStyle": "single",
+      "arrowParentheses": "asNeeded"
+    }
+  },
+  "linter": {
+    "rules": {
+      "style": {
+        "useNumberNamespace": "off"
+      }
     }
   },
   "files": {

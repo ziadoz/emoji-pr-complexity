@@ -4,9 +4,7 @@ import { emoji, score, stripEmoji } from './grading.js';
 
 async function run() {
   try {
-    const octokit = github.getOctokit(
-      core.getInput('token', { required: true }),
-    );
+    const octokit = github.getOctokit(core.getInput('token', { required: true }));
     const { owner, repo } = github.context.repo;
 
     const pr =
@@ -20,9 +18,7 @@ async function run() {
       ).data;
 
     if (!pr) {
-      core.warning(
-        'Could not resolve a pull request from this event. Skipping.',
-      );
+      core.warning('Could not resolve a pull request from this event. Skipping.');
       return;
     }
 

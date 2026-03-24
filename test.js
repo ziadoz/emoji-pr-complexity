@@ -13,17 +13,9 @@ describe('score()', () => {
   const cases = [
     ['typo fix', files(1, ['md'], 2), 6],
     ['small bug fix', files(3, ['js', 'css'], 13), 16],
-    [
-      'new feature, full stack',
-      files(8, ['js', 'css', 'html', 'json'], 19),
-      40,
-    ],
+    ['new feature, full stack', files(8, ['js', 'css', 'html', 'json'], 19), 40],
     ['large refactor', files(20, ['js', 'ts', 'json'], 20), 72],
-    [
-      'Laravel upgrade',
-      files(500, ['php', 'json', 'yml', 'js', 'md'], 4),
-      1120,
-    ],
+    ['Laravel upgrade', files(500, ['php', 'json', 'yml', 'js', 'md'], 4), 1120],
   ];
 
   for (const [desc, f, expected] of cases) {
